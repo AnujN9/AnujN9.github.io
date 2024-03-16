@@ -8,7 +8,7 @@ body {
 	font-family: $font-poppins;
 	font-size: 1.8em;
 	line-height: 1.6;
-	font-weight: 400;
+	font-weight: 600;
 	-webkit-font-smoothing: antialiased;
 }
 
@@ -23,10 +23,10 @@ h1,
 
 h2,
 .h2 {	
-	color: $color-silver-chalice;
+	color: $color-black;
 	display: block;
 	font-family: $font-lekton;
-    font-size: 1.4rem;
+    font-size: 2.0rem;
     font-weight: 400;
     letter-spacing: .2rem;
     line-height: 1;
@@ -41,6 +41,41 @@ h3,
     font-size: 2.4rem;
     font-weight: 600;
     line-height: 1;
+    margin: 0;
+	margin-bottom: 8px;
+}
+
+h4,
+.h4 {	
+	color: $color-black;
+	display: block;
+	font-family: $font-lekton;
+    font-size: 2.0rem;
+    font-weight: 400;
+    letter-spacing: .2rem;
+    line-height: 1;
+    margin: 1 0 1rem;
+    text-transform: uppercase;
+}
+
+h5,
+.h5 {
+	color: $color-black;
+	font-family: $font-poppins;
+    font-size: 2.0rem;
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 0;
+	margin-bottom: 8px;
+}
+
+h6,
+.h6 {
+	color: $color-white-sand;
+	font-family: $font-poppins;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.2;
     margin: 0;
 	margin-bottom: 8px;
 }
@@ -61,10 +96,20 @@ a {
 	text-decoration: none;
 }
 
+// unordered list
 ul {
-	margin: 0;
+	margin: 0px;
+	margin-left: 3rem;
+	padding: 0px;
+	list-style-type: disc;
+	font-weight: 400;
+}
+
+ul.no-bullet {
+    margin: 0;
 	padding: 0;
 	list-style-type: none;	
+	font-weight: 600;
 }
 
 img {
@@ -93,9 +138,10 @@ code {
 	background: $color-white;
 	border: 1px solid $color-silver-chalice;
 	border-radius: 3px;
-	font-family: $font-lekton;
+	font-family: $font-poppins;
 	font-size: 1.5rem;	
 	padding: .1rem .4rem;
+	white-space: pre-wrap;
 
 	var {
 		font-style: italic;
@@ -174,5 +220,5 @@ blockquote {
 }
 
 pre {
-	margin: 0 0 3rem;
+	margin: 0 0 0rem;
 }
