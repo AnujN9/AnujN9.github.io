@@ -15,7 +15,7 @@ project:
 
 ---
 
-In this project the aim was to teach the Franka Panda arm to throw using a training environment set up in PyBullet and Gymnasium. Once the environment was set up the robotic arm would be trained to throw objects roughly 1 meter away from the base of the robot. The objective was to train the aarm to throw and see how well it would translate to throwing in the real-world.
+In this project the aim was to teach the Franka Panda arm to throw using a training environment set up in PyBullet and Gymnasium. Once the environment was set up the robotic arm would be trained to throw objects roughly 1 meter away from the base of the robot. The objective was to train the arm to throw the object to reach the target either directly or by bouncing and see how well it would translate to throwing in the real-world. This is project is inspired by [<ins>TossingBot</ins>](https://tossingbot.cs.princeton.edu/paper.pdf).
 <br/><br/>
 
 ### Video Demo
@@ -79,6 +79,10 @@ The orange DDPG, red SAC and dark blue SAC(1708896918) policies were using end e
 <br/><br/>
 
 
-### Sim to Real
+### Sim-to-Real
+<br/><br/>
+<img title="Throwing on Franka" src="/assets/images/projects/RL_franka/result.gif" width="400" height="600">
+<br/>
+Translating the policy actions from simualtion to the real Franka Arm was only partially successful. This is because the dynamics simulated on PyBullet are not realistic and cannot directly correlate to joint movements on the arm. This was a great inital test however, and can be expanded upon by using different simulators like Mujoco or IssacGym to see how well the sim-to-real transfer works on them. It would also be beneficial to train directly on the Franka with a closed loop system using computer vision to train the robot in the real environment. 
 <br/><br/>
 
