@@ -11,7 +11,7 @@ project:
   type: "Jekyll"
   url: "https://github.com/AnujN9/FrankaToss"
   logo: "/assets/images/projects/RL_franka/throw.gif"
-  tech: "Python, Franka Panda, Reinforcement Learning, Gymnasium, PyBullet, Stable-Baselines3"
+  tech: "RL, Gymnasium, PyBullet"
 
 ---
 
