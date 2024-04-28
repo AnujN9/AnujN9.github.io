@@ -81,7 +81,7 @@ The orange DDPG, red SAC and dark blue SAC(1708896918) policies were using end e
 
 ### Sim-to-Real
 <br/><br/>
-<img title="Throwing on Franka" src="/assets/images/projects/RL_franka/result.gif" width="400" height="600">
+<img title="Throwing on Franka" src="/assets/images/projects/RL_franka/result.gif" width="300" height="400">
 <br/>
 Translating the policy actions from simualtion to the real Franka Arm was only partially successful. This is because the dynamics simulated on PyBullet are not realistic and cannot directly correlate to joint movements on the arm. This was a great inital test however, and can be expanded upon by using different simulators like Mujoco or IssacGym to see how well the sim-to-real transfer works on them. It would also be beneficial to train directly on the Franka with a closed loop system using computer vision to train the robot in the real environment. 
 <br/><br/>
