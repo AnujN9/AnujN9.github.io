@@ -393,6 +393,12 @@
 	overflow: hidden;
 	max-width: 100%;
 
+	@media only screen and (max-width: 600px) {
+		.embed-container {
+		  padding-bottom: 75%; /* Adjust aspect ratio for smaller screens, if needed */
+		}
+	  }
+
   }
   
   .embed-container iframe, .embed-container object, .embed-container embed {
