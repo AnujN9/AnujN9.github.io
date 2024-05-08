@@ -393,7 +393,7 @@
 	overflow: hidden;
 	max-width: 100%;
 
-	@media only screen and (min-width: $breakpoint-medium) {
+	@media (min-width: $breakpoint-medium) {
 		.embed-container {
 			max-width: 80%;
 			margin-bottom: 16px;
