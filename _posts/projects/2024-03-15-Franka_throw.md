@@ -13,6 +13,7 @@ project:
   logo: "/assets/images/projects/RL_franka/throw.gif"
   tech: "RL, Gymnasium, PyBullet"
 
+video_1: XwL6f4UbqA8
 ---
 
 In this project the aim was to teach the Franka Panda arm to throw using a training environment set up in PyBullet and Gymnasium. Once the environment was set up the robotic arm would be trained to throw objects roughly 1 meter away from the base of the robot. The objective was to train the arm to throw the object to reach the target either directly or by bouncing and see how well it would translate to throwing in the real-world. This is project is inspired by [<ins>TossingBot</ins>](https://tossingbot.cs.princeton.edu/paper.pdf).
@@ -20,7 +21,7 @@ In this project the aim was to teach the Franka Panda arm to throw using a train
 
 ### Video Demo
 
-<iframe width="897" height="505" src="https://www.youtube.com/embed/XwL6f4UbqA8" title="Making Coffee with a Robot Arm: Botrista" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+{% include youtubePlayer.html id=page.video_1 %}
 <br/><br/>
 
 
